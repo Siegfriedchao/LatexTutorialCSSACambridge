@@ -11,7 +11,7 @@ A special thanks to Dr Rich Wareham (github: rjw57) who responded to our "add a 
 
 ## Useful References
 
-A University of Cambridge style beamer template can be found [here](https://github.com/rjw57/cambridge-beamer).
+A University of Cambridge style beamer template can be found [here](https://github.com/rjw57/cambridge-beamer). The beamer presentation for this tutorial made use of this template.
 
 A CUED (Engineering Department) PhD thesis template can be found [here](https://github.com/kks32/phd-thesis-template).
 

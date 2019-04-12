@@ -1,0 +1,11 @@
+*.aux
+*.nav
+*.out
+*.snm
+*.synctex
+*.toc
+*.pdf
+!CodeSnippets/*.pdf
+!*cmyk.pdf
+*.log
+.DS_Store

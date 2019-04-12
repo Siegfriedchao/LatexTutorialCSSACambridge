@@ -1,0 +1,250 @@
+\documentclass{article}
+
+\usepackage{lipsum}
+\usepackage[margin = 1 in, left = 1.5in,includefoot]{geometry}
+
+\usepackage[hidelinks]{hyperref} %Allows for clickable references 
+
+
+%Tables preamble
+\usepackage[none]{hyphenat} % Stops breaking up words in a table 
+\usepackage{array}
+\newcolumntype{$}{>{\global\let\currentrowstyle\relax}}
+\newcolumntype{^}{>{\currentrowstyle}}
+\newcommand{\rowstyle}[1]{\gdef\currentrowstyle{#1} #1\ignorespaces}
+
+%Graphics permeable
+\usepackage{graphicx} %Allows you to import images
+\usepackage{float} %Allows for control of float positions.
+
+
+%Math preamble
+\usepackage{mhchem} % Allows us to write chemistry equations
+\usepackage{xfrac} %Allows for slanted fractions
+
+
+%Bibliography preamble
+\usepackage[numbers,sort&compress]{natbib}
+
+% Bullet preamble
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\diamond$}
+\renewcommand\labelitemiii{$\circ$}
+
+%Header and Footer Stuff
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyfoot[R]{ \thepage\ }
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{1pt}
+%
+
+\begin{document}
+
+\begin{titlepage}
+	\begin{center} 
+	\line(1,0){300}\\
+	[0.25in]
+	\huge {\bfseries Daoming LaTex Notes}\\
+	[2mm]
+	\line(1,0){200}\\
+	[1.5cm]
+	\textsc{\LARGE University Of Liverpool}\\
+	[0.75cm]
+	\textsc{\LARGE Using LaTex to Write a Simple Report}\\
+	[8cm]
+	\end{center}
+	\begin{flushright}
+	\textsc{\large Michael D. \\
+	A Latex User \\
+	\# 1234567890 \\
+	January 21, 2016 \\}
+	\end{flushright}
+\end{titlepage}
+
+%Front matter stuff
+\pagenumbering{roman}
+\section*{Summary}
+\addcontentsline{toc}{section}{\numberline{}Summary}
+This is the summary section. This video teaches you how to write a report in Latex
+\cleardoublepage
+
+\section*{Acknolwdgement}
+\addcontentsline{toc}{section}{\numberline{}Acknolwdgement}
+Thanks to LaTex Creator.
+\cleardoublepage
+
+%This is table of contents stuff
+\tableofcontents
+\thispagestyle{empty}
+\cleardoublepage
+
+% List of figures, list of tables
+\listoffigures
+\addcontentsline{toc}{section}{\numberline{}List of Figures}
+\cleardoublepage
+
+\listoftables
+\addcontentsline{toc}{section}{\numberline{}List of Tables}
+\cleardoublepage
+
+%This is main body stuff
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+
+
+
+
+\section{Introduction}\label{sec:intro}
+This is the first line of the report. This report will document on Tobias, the groundhog who lives in my backyard.
+
+
+Tobias likes to live in a hole in the ground. The text will wrap around properly, don't you worry.
+
+
+\lipsum[1]
+
+\newpage
+\section{Tobia's Lifestyle}
+Tobias, although he lives in a hole in the ground, he also likes to climb trees. \cite{ref:zan}
+
+This introduction is found on page \pageref{sec:intro}.
+%Here we insert our figure
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=3in]{/Users/daomingdong/Desktop/Owl.jpg}
+	\caption[Optional caption]{Real, Local caption}
+	\label{fig:Owl}
+\end{figure}
+
+Figure \ref{fig:Owl} shows an cute Owl.
+
+\begin{equation}
+x = 5
+\end{equation}
+\subsection{Where Tobias gets food}
+Usually groundhogs nibble on greens found on the ground, but not Tobias. He is the exception to this rule.
+
+%Our first table
+\begin{table}[H]
+	\centering
+	\label{tab:tobiastreesightings}
+	\caption[This is optional caption, without reference]{Local caption, with reference \cite{ref:two,ref:zan}} 
+	\begin{tabular}{ l c r }
+		\bfseries{Date} & In tree? & Raining? \\ \hline
+		April 26 & Yes & Yes \\
+		June 7 & Yes & No \\
+		June 20 & Yes & No \\
+	\end{tabular}
+
+\end{table}
+
+Table \ref{tab:tobiastreessightthings} logs times I've seen Tobias in the tree.
+
+\begin{table} [H]
+	\centering
+	\label{tab:ctable}
+	\caption{This is our caption for the complicated table}
+	\begin{tabular}{$p{0.9in}^p{1.75in}^p{0.9in}^p{1.2in} }
+	\rowstyle{\bfseries}Video Number & Subject & Really Long Winded? & Date of filming \\
+        1 & Titlepage & Oh yes & Jun 26 \\
+        2 & Sections, Margins Page Number & Yes & Jun 26, 14 \\
+        3 & Tablescontents Thisistwolongwords & Too much so & Jun 25, 14 \\
+        4 & Figures & Not as bad & Jul 2, 14 \\
+        5 & Simple Tables & Not really & Jul 2, 14 \\
+        6 & Complicated Tables & Probably will be & Jul 2, 14 \\ \hline
+        \multicolumn{4}{c}{Speculation} \\ \hline
+        7 & Referencing & Hopefully Not & Jul 2, 14 \\
+        8 & Appendices & Should not be & Future \\
+        9 & List & Not at all & Future \\
+        10 & Math & Probably & Future \\
+        11 & Different Math & Probably & Future \\
+        12 & Why Use Latex & Most definitely & Future \\
+        \end{tabular}
+ \end{table}
+
+
+\subsubsection{Subsubsection}
+This is a subsection.
+
+
+This is subsection will be used for containing a list!
+
+\begin{itemize}
+	\item This is our first line
+	\item This is our second line and I am making it longer so that you can see how text wraps around automatically in Latex.
+	\begin{itemize}
+		\item A bullet within a bullet!
+			\begin{itemize}
+				\item Must go deeper...
+			\end{itemize}
+		\item Second one too.
+	\end{itemize}
+	\item Good things come in threes.
+	\item [Title] blah blah blah.
+	\item[This is a longer title] blah blah blah.
+	\begin{enumerate}
+		\item Some people
+		\item Like lists with numbers instead.
+	\end{enumerate}
+\end{itemize}
+
+\cleardoublepage
+\bibliographystyle{IEEEtran}
+\bibliography{/Users/daomingdong/Documents/SoftwareTraining/LaTex/References/Secondref.bib}
+\addcontentsline{toc}{section}{\numberline{}References}
+\cleardoublepage
+
+%Appendix starts here
+\appendix
+\section{Backmatter Words}
+This is the appendix.
+
+I can write math in line with text $E=mc^2$ is I wanted to. If I wanted to have math $$Pv = nRT$$ not in a sentence I could do this!
+
+We can use symbols in our math formulas.
+
+$$-\frac{\hbar^2}{2m} \frac{d^2\Psi}{dx^2} = E\Psi$$
+
+Chemistry equation:
+
+\ce{CH_{4(g)} + O_{2(g)} -> CO_{2(g)} +2H_2O_{(l)}}
+
+Fractions
+
+$$d = v_it + 1/2 \cdot at^2$$
+$$d = v_it + \frac{1}{2} \cdot at^2$$
+$$d = v_it + \sfrac{1}{2} \cdot at^2$$
+
+Brackets:
+$$(\frac{1}{2}) \cdot 2 = 1$$
+$$\left(\frac{1}{2}\right) \cdot 2 = 1$$ 
+\centering
+\line(1,0){300}
+$$\left|-7 \right| = 7$$
+
+$$x^{2^3}$$
+
+
+\begin{eqnarray*}
+    \sqrt{4} &=& 2 \\
+    \sqrt{4} &\neq& 5 \\ 
+    \sqrt{4} &<& 5 \\
+    \pi &\approx& 3 \\
+    \pi &\times& \sqrt{4} < 15
+\end{eqnarray*}
+
+\begin{equation} \label{eq:tobias}
+x^2 + 7x - 5 = 0
+\end{equation}
+
+\begin{equation}\label{eq:second}
+x^2 - 9x + 1 = 0
+\end{equation}
+
+The first equation is equation \ref{eq:tobias}, which you can try and solve
+
+\end{document}

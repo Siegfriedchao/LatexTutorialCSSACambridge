@@ -1,0 +1,56 @@
+\documentclass{article}
+\usepackage{lipsum}
+\begin{document}
+\begin{titlepage}
+	\begin{center}
+		\line(1,0){300}\\
+		[0.25in]
+		\huge{\textbf{ CSSA \LaTeX\ Notes}}\\
+		[2mm]
+		\line(1,0){200}\\
+		[1.5cm]
+		\textsc{\LARGE University of Cambridge}\\
+		\textsc{\LARGE Using \LaTeX\ to Write a Simple Report}\\
+		[8cm]
+	\end{center}
+	\begin{flushright}
+		\textsc{\large CSSA. \\ A Latex User\\
+		20th Apr 2019}
+	\end{flushright}
+\end{titlepage}
+\cleardoublepage
+\section{Introduction} 
+This is the first line of the report. This report will show you how to use \LaTeX\\\
+% Text holder here, show one paragraph of \lipsum
+\lipsum[1]
+\section{Second section}
+This is the second section of this report.
+\subsection{Sub section 1} 
+This is the first sub section in this report.
+\subsection{Sub section 2} 
+This is the second subsection in this report.
+\subsubsection{Sub sub section}
+This is a sub sub section. Replace text here when you write your report.
+\cleardoublepage
+\section{Lists}
+% Normal bullet point: itemized
+\begin{itemize}
+	\item This is our first line
+	\item This is our second line and I am making it longer so that you can see how text wraps around automatically in \LaTeX
+	\begin{itemize}
+		\item A bullet within a bullet!
+		\begin{itemize}
+			\item More deeper
+		\end{itemize}
+	\end{itemize}
+	\item [Title] blah blah blah
+	\item [This is a longer title] blah blah blah
+	\begin{enumerate}
+		% Numberd lists
+		\item \lipsum[1]
+		% Just try to make the PDF looks okay for this presentation
+		\item \lipsum[2]
+	\end{enumerate}
+\end{itemize}
+
+\end{document}

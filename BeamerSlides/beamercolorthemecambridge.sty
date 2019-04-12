@@ -1,0 +1,62 @@
+\usepackage{cambridgecolours}
+
+\def\beamer@theme@base@blue{
+  \definecolor{CambridgeCore}{named}{CambridgeCoreBlue}
+  \definecolor{CambridgeLight}{named}{CambridgeLightBlue}
+  \definecolor{CambridgeDark}{named}{CambridgeDarkBlue}
+}
+\def\beamer@theme@base@orange{
+  \definecolor{CambridgeCore}{named}{CambridgeCoreOrange}
+  \definecolor{CambridgeLight}{named}{CambridgeLightOrange}
+  \definecolor{CambridgeDark}{named}{CambridgeDarkOrange}
+}
+\def\beamer@theme@base@purple{
+  \definecolor{CambridgeCore}{named}{CambridgeCorePurple}
+  \definecolor{CambridgeLight}{named}{CambridgeLightPurple}
+  \definecolor{CambridgeDark}{named}{CambridgeDarkPurple}
+}
+\def\beamer@theme@base@green{
+  \definecolor{CambridgeCore}{named}{CambridgeCoreGreen}
+  \definecolor{CambridgeLight}{named}{CambridgeLightGreen}
+  \definecolor{CambridgeDark}{named}{CambridgeDarkGreen}
+}
+\def\beamer@theme@base@teal{
+  \definecolor{CambridgeCore}{named}{CambridgeCoreTeal}
+  \definecolor{CambridgeLight}{named}{CambridgeLightTeal}
+  \definecolor{CambridgeDark}{named}{CambridgeDarkTeal}
+}
+
+\beamer@theme@base@blue
+\DeclareOptionBeamer{base}{\csname beamer@theme@base@#1\endcsname}
+\ProcessOptionsBeamer
+
+\mode<presentation>
+
+\setbeamercolor*{normal text}{fg=CambridgeDark,bg=CambridgeWhite}% was CambridgeLight!20!white
+\setbeamercolor*{structure}{fg=CambridgeDark}
+
+\setbeamercolor*{palette primary}{fg=white,bg=CambridgeBlue} % This is the frame title part
+\setbeamercolor*{palette secondry}{fg=white,bg=CambridgeDark} % The last part
+\setbeamercolor*{palette tertiary}{fg=white,bg=CambridgeLight!40!black}
+\setbeamercolor*{palette quaternary}{fg=white,bg=CambridgeLight!40!white}
+
+% Title page changing
+\setbeamercolor*{title}{fg=white,bg=CambridgeBlue} % was CambridgeLight!50!CambridgeCore
+\setbeamercolor*{author}{fg=white,bg=CambridgeDark}
+\setbeamercolor*{institute}{parent=author}
+\setbeamercolor*{date}{fg=white,bg=CambridgeTeal}
+\setbeamercolor*{abstract}{parent=author}
+
+\setbeamercolor*{lower separation line head}{fg=white,bg=CambridgeLight!80!black}
+
+\setbeamercolor*{special page canvas}{bg=CambridgeLight}
+\setbeamercolor*{special page separator upper}{bg=CambridgeLight!40!white}
+\setbeamercolor*{special page separator lower}{bg=CambridgeLight!40!black}
+\setbeamercolor*{special page title}{fg=white,bg=CambridgeLight!80!white}
+
+\setbeamercolor*{block body}{bg=CambridgeBlue text.bg,fg=CambridgeDark} %CambridgeCore!20!normal
+\setbeamercolor*{block title}{bg=CambridgeBlue,fg=white}
+
+\setbeamercolor*{alerted text}{fg=CambridgeCore}
+
+\mode<all>

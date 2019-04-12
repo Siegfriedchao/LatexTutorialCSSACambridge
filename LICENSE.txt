@@ -2,7 +2,7 @@
 						The MIT License (MIT)
 		applies to: 
 		cambridge-beamer, Copyright (c) 2014 Rich Wareham
-						  Copyright (c) 2019 Daoming Dong, Youchao Wang
+			          Copyright (c) 2019 Daoming Dong, Youchao Wang
 -----------------------------------------------------------------------------
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of

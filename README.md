@@ -19,6 +19,8 @@ You may find all the source codes for the LaTeX presentation slides in the `Beam
 pdflatex LaTeXTutorial.tex
 ```
 
+![Demo](BeamerSlides/Figures/Demo.gif)
+
 ## Useful references
 
 A University of Cambridge style beamer template can be found [here](https://github.com/rjw57/cambridge-beamer). The beamer presentation for this tutorial made use of this template.

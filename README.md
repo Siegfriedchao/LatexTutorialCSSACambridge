@@ -30,4 +30,4 @@ A CUED (Engineering Department) PhD thesis template can be found [here](https://
 
 A good one-hour LaTeX youtube video can be found [here](https://www.youtube.com/watch?v=VhmkLrOjLsw).
 
-The Cambridge Computer Lab LaTeX tutorial slides can be found [here](https://www.cl.cam.ac.uk/teaching/1617/TeX+MATLAB/latex-slides.pdf).
+The Cambridge Computer Lab LaTeX tutorial slides by Dr Markus Kuhn can be found [here](https://www.cl.cam.ac.uk/teaching/1617/TeX+MATLAB/latex-slides.pdf). Some of the contents in the presentation were referenced from this source.

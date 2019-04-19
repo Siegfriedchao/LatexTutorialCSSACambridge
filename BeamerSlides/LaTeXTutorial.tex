@@ -120,7 +120,7 @@
 \title{How to use \LaTeX}
 \author{Daoming Dong \& Youchao Wang}
 \institute{CMMPE, Engineering, University of Cambridge}
-\date{\today}
+\date{April 20, 2019}
 \begin{document}
 
 \begin{frame}
@@ -136,12 +136,29 @@
 		\item \LaTeX\ is elegant, charming, or whatever...
 		\item Excellent for mathematical typesetting.
 		\item Powerful, lots and lots of power for you to extend it, be it theses, papers, slides (using Beamer), spreadsheets...
+		\item Free and portable, supported by most OS platforms.
 	\end{itemize}
 
 \end{frame}
 
 \begin{frame}
-	\frametitle{Useful Resources}
+\frametitle{What \LaTeX \ can do}
+
+\begin{itemize}
+	\item Write scientific papers
+	\item Write theses
+	\item Typeset books and publications
+	\item Write typeset letters
+	\item Play around with mathematical formulae
+	\item Make presentation slides
+	\item Beautify your CV
+	\item and many more
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Useful resources}
 
 	Books list
 	 \begin{columns}
@@ -149,7 +166,7 @@
 		\centering
 		\begin{figure}
 			\includegraphics[width=.5\linewidth]{Figures/BeginnersGuide.jpg}
-			\caption{\LaTeX Beginner's Guide}
+			\caption{\LaTeX \ Beginner's Guide}
 		\end{figure}
 		\column{0.5\textwidth}
 		\centering
@@ -161,24 +178,28 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{Useful Resources}
+	\frametitle{Useful resources}
 
 	Learn \LaTeX \ in one video : https://www.youtube.com/watch?v=VhmkLrOjLsw
 	
 	\bigskip
 	
 	Mr Daoming Dong is also a good resource. He is nice and helpful.
+	
+	Zhihu: @DDMichael
 
 \end{frame}
 
 \begin{frame}
-	\frametitle{A Brief History}
+	\frametitle{A brief history}
 
-	In the mid 1970s, Donald Knuth, a Stanford CS geek developed \TeX \ in SAIL to typeset his "The Art of Computer Programming" (TAOCP). First public release in 1978. He reimplemented it in Pascal in the mid 80s (WEB, literate programming).  Leslie Lamport, the genius, wrote \LaTeX \ in early 80s by porting the orginal \TeX. 
+	In the mid 1970s, Donald Knuth, a Stanford CS geek and the academic world equivalent of Martin (the author of GOT), developed \TeX \ in SAIL to typeset his "The Art of Computer Programming" (TAOCP). First public release in 1978. He reimplemented it in Pascal in the mid 80s (WEB, literate programming).  Leslie Lamport, the genius, wrote \LaTeX \ in early 80s by porting the orginal \TeX. 
 	
 	\bigskip
 	
-	What is the relationship between \TeX \xspace and \LaTeX? \LaTeX \ uses the \TeX \ typesetting programme to compile and generate its output. \LaTeX \ focuses on the content while \TeX \ is the main programme for setting up the layout.
+	What is the relationship between \TeX \xspace and \LaTeX? 
+	
+	\LaTeX \ uses the \TeX \ typesetting programme to compile and generate its output. \LaTeX \ focuses on the content while \TeX \ is the main programme for setting up the layout.
 
 \end{frame}
 
@@ -213,21 +234,6 @@
 \end{frame}
 
 \begin{frame}
-\frametitle{What \LaTeX \ can do and what it cannot}
-
-	\begin{itemize}
-		\item Write scientific papers
-		\item Write theses
-		\item Typesetting books and publications
-		\item Write typeset letters
-		\item Play around with mathematical formula
-		\item Make presentation slides
-		\item and many more
-	\end{itemize}
-	
-\end{frame}
-
-\begin{frame}
 	\frametitle{Installation}
 	
 	We would highly recommend the following \LaTeX \ distributions.
@@ -245,6 +251,8 @@
 			\end{itemize}
 	\end{itemize}
 
+	Note that the TeX Live distribution contains yearly updates, and the update installation must be done manually.
+
 \end{frame}
 
 \begin{frame}
@@ -255,13 +263,15 @@
 	\begin{itemize}
 		\item TeXStudio \textbf{(behold, the beamer template we used for this tutorial cannot be built using this editor)}
 		\item TeXShop
-		\item Notepad
+		\item Notepad \ Notepad++
 		\item Sublime
 		\item Visual Studio Code
-		\item Vim
-		\item and many others...
+		\item Vi / Vim
+		\item \emph{Word} !!!
 		\item Overleaf (the online editor)
 	\end{itemize}
+
+	In fact, any plain-text editor shall suffice.
 
 \end{frame}
 
@@ -322,7 +332,11 @@
 \begin{frame}
 	\frametitle{Some common knowledge}
 	
-	Since \LaTeX \ is a package implemented in the \TeX \ typesetting \textbf{language}, we should consider the \TeX \ input syntax when use it.
+	Since \LaTeX \ is a package implemented in the \TeX \ \textbf{typesetting language}, we should consider the \TeX \ input syntax when use it.
+	
+	\bigskip
+	
+	\TeX \ reads *.tex files and with lots of interesting background procedures, outputs *.pdf files. 
 	
 \end{frame}
 
@@ -330,10 +344,11 @@
 	\frametitle{Some common knowledge}
 	
 	\begin{itemize}
-		\item The effect of typing multiple space is the same as one space.
+		\item The effect of typing multiple spaces is the same as one space.
 		\item The effect of typing multiple line feeds is the same as one line break.
-		\item If you don't know how and when to use $\backslash$ (backslash), then you are doomed.
-		\item Be aware of  the use of \textbackslash xpace and whatever that follows the backslash after the  \textasciitilde mark, e.g., \textasciitilde \textbackslash ref.
+		\item If you don't know how and when to use $\backslash$ (backslash), \textbf{then you are doomed}.
+		\item Be aware of the use of \textbackslash xpace and whatever that follows the backslash after the  \textasciitilde mark, e.g., \textasciitilde \textbackslash ref.
+		\item \textbackslash(white space), this forces normal space, \textbackslash @, this indicates that the next punctuation ends the sentence. Try out the differences by yourselves.
 	\end{itemize}
 	
 \end{frame}
@@ -357,7 +372,7 @@
 \begin{frame}[containsverbatim]
 	\frametitle{Changing fonts and styles}
 	
-	You may either use (1) commands or (2) lexical declarations. \textit{\footnotesize Contents are referenced from the slides for a course held at the Computer Lab, Cambridge.}
+	You may either use (1) lexical declarations or (2) commands. \textit{\footnotesize Contents are referenced from the slides for a course held at the Computer Lab, Cambridge.}
 	\begin{columns}
 		\column{0.2\textwidth}
 		\raggedleft
@@ -402,6 +417,52 @@
 			\textnormal{Normal style}
 	\end{columns}
 \end{frame}
+
+
+\begin{frame}[containsverbatim]
+\frametitle{How to use dashes}
+
+There are, in fact, \textbf{en dashes}, \textbf{em dashes}, \textbf{hyphens} and \textbf{minus signs}.
+
+\bigskip
+
+\centering
+\verb|-| corresponds to - hyphen\\
+\verb|--| corresponds to -- en dash\\
+\verb|---| corresponds to --- em dash\\
+\verb|$-$| corresponds to $-$ minus sign
+
+\bigskip
+
+\raggedright
+For example, line-breaks (\textit{hyphen}), Figures 1--4 (\textit{en dash}), people---like me---love to use \LaTeX. 
+
+In terms of how to properly use them, try searching the internet for answers. \textbf{Metaphysics} it is.
+
+\end{frame}
+
+\begin{frame}
+\frametitle{How to use quotation marks}
+
+One of the (out of many) mistakes that you will definitely make throughout your \LaTeX \ journey is the use of quotation marks.
+
+Unlike Word, \TeX \ uses single quotation mark (') and the grave accent (`) to encode the differences.
+
+\bigskip
+
+\centering
+\' \ corresponds to ' left quote\\
+\` \ corresponds to ` right quote\\
+\' \ \' \ corresponds to '' left double\\
+\` \ \` \ corresponds to `` right double
+
+\bigskip
+
+\raggedright
+
+\end{frame}
+
+
 
 % \begin{frame}
 % 	\frametitle{Directory structure}
@@ -836,26 +897,6 @@ This is the second appendix.
 	\end{columns}
 \end{frame}
 
-\begin{frame}[containsverbatim]
-	\frametitle{How to use dashes}
-	
-	There are, in fact, \textbf{en dashes}, \textbf{em dashes}, \textbf{hyphens} and \textbf{minus signs}.
-	
-	\bigskip
-	
-	\centering
-	\verb|-| corresponds to - hyphen\\
-	\verb|--| corresponds to -- en dash\\
-	\verb|---| corresponds to --- em dash\\
-	\verb|$-$| corresponds to $-$ minus sign
-	
-	\bigskip
-	
-	\raggedright
-	In terms of how to properly use them, try searching the internet for answers. \textbf{Metaphysics} it is.
-	
-\end{frame}
-
 \begin{frame}
 	\frametitle{Templates}
 	
@@ -868,14 +909,13 @@ This is the second appendix.
 \end{frame}
 
 \begin{frame}
-	\frametitle{Useful resources revisit}
-	
-	\begin{itemize}
-		\item University of Cambridge CUED thesis template, \textbf{\href{https://gitlab.com/Siegfriedchao/latextutorial}{Gitlab: Siegfriedchao}}, 
-		modified from \textbf{\href{https://github.com/kks32/phd-thesis-template}{Github: kks32}}
-		\item University of Cambridge Powerpoint template, \textbf{\href{https://gitlab.com/Siegfriedchao/latextutorial}{Gitlab: Siegfriedchao}}, 
-		modified from \textbf{\href{https://github.com/rjw57/cambridge-beamer}{Github: rjw57}}
-	\end{itemize}
+\frametitle{The last session: Q and A}
+
+Hopefully, hopefully and hopefully we will be able to answer your questions.
+
+\bigskip
+
+\Huge{Thank you!}
 
 \end{frame}
 

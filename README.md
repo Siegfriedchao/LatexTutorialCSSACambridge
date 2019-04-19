@@ -31,3 +31,24 @@ A CUED (Engineering Department) PhD thesis template can be found [here](https://
 A good one-hour LaTeX youtube video can be found [here](https://www.youtube.com/watch?v=VhmkLrOjLsw).
 
 The Cambridge Computer Lab LaTeX tutorial slides by Dr Markus Kuhn can be found [here](https://www.cl.cam.ac.uk/teaching/1617/TeX+MATLAB/latex-slides.pdf). Some of the contents in the presentation were referenced from this source.
+
+## Cloning the repository
+
+Since this repo contains submodules, the ideal way of cloning this repository is:
+
+```
+git clone --recursive https://github.com/Siegfriedchao/LatexTutorialCSSACambridge.git
+```
+
+To update recursively, i.e. to pull the updates from the submodules
+
+```
+git pull --recurse-submodules
+git submodule update --remote --recursive
+```
+
+Whenever you find yourself pulling an empty submodle folder, do not panic, all you need to do is:
+
+```
+git submodule update --init
+```

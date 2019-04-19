@@ -26,7 +26,7 @@ pdflatex LaTeXTutorial.tex
 
 A University of Cambridge style beamer template can be found [here](https://github.com/rjw57/cambridge-beamer). The beamer presentation for this tutorial made use of this template.
 
-A CUED (Engineering Department) PhD thesis template can be found [here](https://github.com/kks32/phd-thesis-template).
+A CUED (Engineering Department) PhD thesis template can be found [here](https://github.com/kks32/phd-thesis-template). A modified thesis template is available in the submodule.
 
 A good one-hour LaTeX youtube video can be found [here](https://www.youtube.com/watch?v=VhmkLrOjLsw).
 

@@ -204,9 +204,17 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{\LaTeX version}
+	\frametitle{\LaTeX \ version and more}
 	
-	The first \LaTeX\xspace version available is 2.09 (strange number and strange version control). Later in 1994, \LaTeXe\xspace replaced the old version, and remained ever since. \LaTeX \ 3 is a long-term research project, which started from the 1990s.
+	The first \LaTeX\xspace version available is 2.09 (strange number and strange version control). Later in 1994, \LaTeXe\xspace replaced the old version, and remained ever since. 
+	
+	\bigskip
+	
+	\LaTeX \ 3 is a long-term research project, which started from the 1990s.
+	
+	\bigskip
+	
+	\LaTeX, unlike Microsoft Office Word, is not \textbf{WYSIWYG} (what you see is what you get), and it allows the user to focus on the content and structure of the text. Lots of strange syntax and commands are present in the \LaTeX \ source file. 
 	
 \end{frame}
 
@@ -251,7 +259,7 @@
 			\end{itemize}
 	\end{itemize}
 
-	Note that the TeX Live distribution contains yearly updates, and the update installation must be done manually.
+	Note that the TeX Live distribution contains yearly updates, and the update installation must be done manually. TeX Live 2019 is scheduled to release by the end of this April.
 
 \end{frame}
 
@@ -263,7 +271,7 @@
 	\begin{itemize}
 		\item TeXStudio \textbf{(behold, the beamer template we used for this tutorial cannot be built using this editor)}
 		\item TeXShop
-		\item Notepad \ Notepad++
+		\item Notepad / Notepad++
 		\item Sublime
 		\item Visual Studio Code
 		\item Vi / Vim
@@ -279,7 +287,7 @@
 \begin{frame}
 	\frametitle{How to use}
 	
-	\emph{We have to remind you that learning \LaTeX \ (might be) very hard}
+	We have to remind you that learning \LaTeX \ \emph{ (might be) very hard  \footnotemark}
 	
 	\begin{figure}
 		\includegraphics[width=.7\linewidth]{Figures/Curve.png}
@@ -290,7 +298,7 @@
 \begin{frame}
 	\frametitle{How to use}
 	
-	\emph{We have to remind you that learning \LaTeX \  (might be) very hard  \footnotemark}
+	We have to remind you that learning \LaTeX \ \emph{ (might be) very hard  \footnotemark}
 	\begin{columns}
 		\tikzset{box/.style={inner xsep=0pt}}
 		
@@ -331,12 +339,11 @@
 
 \begin{frame}
 	\frametitle{Some common knowledge}
-	
-	Since \LaTeX \ is a package implemented in the \TeX \ \textbf{typesetting language}, we should consider the \TeX \ input syntax when use it.
-	
-	\bigskip
-	
-	\TeX \ reads *.tex files and with lots of interesting background procedures, outputs *.pdf files. 
+
+	\begin{itemize}
+		\item Since \LaTeX \ is a package implemented in the \TeX \ \textbf{typesetting language}, we should consider the \TeX \ input syntax when use it.
+		\item \TeX \ reads *.tex files and with lots of interesting background procedures, outputs *.pdf files. 
+	\end{itemize}
 	
 \end{frame}
 
@@ -347,7 +354,7 @@
 		\item The effect of typing multiple spaces is the same as one space.
 		\item The effect of typing multiple line feeds is the same as one line break.
 		\item If you don't know how and when to use $\backslash$ (backslash), \textbf{then you are doomed}.
-		\item Be aware of the use of \textbackslash xpace and whatever that follows the backslash after the  \textasciitilde mark, e.g., \textasciitilde \textbackslash ref.
+		\item Be aware of the use of \textbackslash xspace and whatever that follows the backslash after the \textasciitilde mark, e.g., \textasciitilde \textbackslash ref.
 		\item \textbackslash(white space), this forces normal space, \textbackslash @, this indicates that the next punctuation ends the sentence. Try out the differences by yourselves.
 	\end{itemize}
 	
@@ -418,6 +425,22 @@
 	\end{columns}
 \end{frame}
 
+\begin{frame}[containsverbatim]
+\frametitle{Changing fonts and styles}
+
+	In order to properly apply the font and style settings to your text, you will need to use curly braces \{ and \} for grouping.
+	
+	\begin{itemize}
+		\item Using the commands and macros grouped by the curly braces.\\ E.g. \\
+		This is to demonstrate the \textbackslash textbf \{bold\} statement. \\
+		This is to demonstrate the \textbf{bold} statement.
+		\item Setting up the lexical scope using the curly braces.\\ E.g. \\
+		This is to demonstrate the \{\textbackslash bfseries bold\} statement.\\
+		This is to demonstrate the {\bfseries bold} statement.
+	\end{itemize}
+
+\end{frame}
+
 
 \begin{frame}[containsverbatim]
 \frametitle{How to use dashes}
@@ -435,7 +458,7 @@ There are, in fact, \textbf{en dashes}, \textbf{em dashes}, \textbf{hyphens} and
 \bigskip
 
 \raggedright
-For example, line-breaks (\textit{hyphen}), Figures 1--4 (\textit{en dash}), people---like me---love to use \LaTeX. 
+For example, line-breaks (\textit{hyphen}), Figures 1--4 (\textit{en dash}), people---like me---love to use \LaTeX \ (\textit{em dash}). 
 
 In terms of how to properly use them, try searching the internet for answers. \textbf{Metaphysics} it is.
 

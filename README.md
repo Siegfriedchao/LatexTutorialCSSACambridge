@@ -12,7 +12,7 @@ A special thanks to Dr Rich Wareham (github: rjw57) who responded to our "add a 
 
 ## Repository layout
 
-`LaTeXTutorial.pdf`: The beamer slides used for the tutorial. Currently still WIP.
+`LaTeXTutorial.pdf`: The beamer slides used for the tutorial.
 
 You may find all the source codes for the LaTeX presentation slides in the `BeamerSlides` folder. The main `.tex` file is `LaTeXTutorial.tex`. The easiest way to build the project is to use the following code (in your `bash`/`powershell` environment).
 

@@ -42,41 +42,6 @@
 \definecolor{MS_Blue}{rgb}{0,.47843,0.8}
 \definecolor{MS_Green}{rgb}{0.415686, 0.6, 0.333}
 
-% Draw folders and files structure
-% \documentclass[tikz,border=5mm]{standalone}
-
-% \usepackage[edges]{forest}
-
-% \definecolor{foldercolor}{RGB}{124,166,198}
-
-% \definecolor{folderbg}{RGB}{124,166,198}
-% \definecolor{folderborder}{RGB}{110,144,169}
-
-% \def\Size{4pt}
-% \tikzset{
-%   folder/.pic={
-%     \filldraw[draw=folderborder,top color=folderbg!50,bottom color=folderbg]
-%       (-1.05*\Size,0.2\Size+5pt) rectangle ++(.75*\Size,-0.2\Size-5pt);  
-%     \filldraw[draw=folderborder,top color=folderbg!50,bottom color=folderbg]
-%       (-1.15*\Size,-\Size) rectangle (1.15*\Size,\Size);
-%   }
-% }
-
-% \forestset{is file/.style={edge path'/.expanded={%
-%         ([xshift=\forestregister{folder indent}]!u.parent anchor) |- (.child anchor)},
-%         inner sep=1pt},
-%     this folder size/.style={edge path'/.expanded={%
-%         ([xshift=\forestregister{folder indent}]!u.parent anchor) |- (.child anchor) pic[solid]{folder=#1}}, inner ysep=0.6*#1},
-%     folder tree indent/.style={before computing xy={l=#1}},
-%     folder icons/.style={folder, this folder size=#1, folder tree indent=3*#1},
-%     folder icons/.default={12pt},
-% }
-% Draw folders and files structure
-
-% lstdefinelanguage{TeX}
-% {
-	
-% }
 \lstset{
 	language=[LaTeX]TeX,
 	texcsstyle=*\bf\color{MS_Blue},
@@ -117,10 +82,10 @@
 \usetheme{cambridge}
 \setbeamertemplate{caption}[numbered]
 % \usetheme{Boadilla}
-\title{How to use \LaTeX}
-\author{Daoming Dong \& Youchao Wang}
+\title{How to use \LaTeX\xspace : \small{A gentle walk into the world of typesetting}}
+\author{Youchao Wang (\& Daoming Dong)}
 \institute{CMMPE, Engineering, University of Cambridge}
-\date{April 20, 2019}
+\date{June, 2022}
 \begin{document}
 
 \begin{frame}
@@ -184,9 +149,9 @@
 	
 	\bigskip
 	
-	Mr Daoming Dong is also a good resource. He is nice and helpful.
+	Overleaf: https://www.overleaf.com
 	
-	Zhihu: @DDMichael
+	The easy to use, online, collaborative editor. Templates and tutorials are available.
 
 \end{frame}
 
@@ -923,7 +888,7 @@ This is the second appendix.
 \begin{frame}
 	\frametitle{Templates}
 	
-	We will demonstrate some useful \LaTeX\xspace templates. 
+	I will demonstrate some useful \LaTeX\xspace templates. 
 	
 	\bigskip
 	
@@ -934,7 +899,7 @@ This is the second appendix.
 \begin{frame}
 \frametitle{The last session: Q and A}
 
-Hopefully, hopefully and hopefully we will be able to answer your questions.
+Hopefully, hopefully and hopefully I will be able to answer your questions, because \LaTeX\xspace is HARD.
 
 \bigskip
 

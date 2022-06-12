@@ -82,11 +82,12 @@
 \usetheme{cambridge}
 \setbeamertemplate{caption}[numbered]
 % \usetheme{Boadilla}
-\title{How to use \LaTeX\xspace : \small{A gentle walk into the world of typesetting}}
-\author{Youchao Wang (\& Daoming Dong)}
+\title{How to use \LaTeX\xspace : \small{A \underline{gentle} walk into the world of typesetting}}
+\author{(Still not a Dr.) Youchao Wang (\& Credit to: Dr. Daoming Dong)}
 \institute{CMMPE, Engineering, University of Cambridge}
-\date{June, 2022}
+\date{July, 2022}
 \begin{document}
+
 
 \begin{frame}
 	\titlepage
@@ -97,10 +98,10 @@
 	An extremely good philosophical question.
 	
 	\begin{itemize}
-		\item Microsoft Office Word and PowerPoint are boring.
+		\item Microsoft Office Word and PowerPoint are boring, because they literally are.
 		\item \LaTeX\ is elegant, charming, or whatever...
-		\item Excellent for mathematical typesetting.
-		\item Powerful, lots and lots of power for you to extend it, be it theses, papers, slides (using Beamer), spreadsheets...
+		\item Excellent for mathematical typesetting (you can even use \LaTeX \ in Word!).
+		\item Powerful, lots and lots of funcationalities for you to discover and extend. Be it theses, papers, slides (using Beamer), spreadsheets... Your imagination is the only limitation (apart from time...).
 		\item Free and portable, supported by most OS platforms.
 	\end{itemize}
 
@@ -162,7 +163,7 @@
 	
 	\bigskip
 	
-	What is the relationship between \TeX \xspace and \LaTeX? 
+\textit{Q: What is the relationship between \TeX \xspace and \LaTeX? }
 	
 	\LaTeX \ uses the \TeX \ typesetting programme to compile and generate its output. \LaTeX \ focuses on the content while \TeX \ is the main programme for setting up the layout.
 
@@ -186,7 +187,7 @@
 \begin{frame}
 	\frametitle{How to pronounce \LaTeX\ ?}
 	
-	First and foremost, the pronunciation of \LaTeX. According to the father of \TeX:
+	First and foremost, the pronunciation of \LaTeX. According to the father of \TeX\footnote{This frame here uses the \textit{aquote} package}:
 	
 	\begin{aquote}{Donald Knuth}
 		English words like `technology' stem from a Greek root beginning with the letters $\tau \epsilon \chi$...; and this same Greek word means art as well as technology. Hence the name TeX, which is an uppercase form of $\tau \epsilon \chi$.
@@ -199,17 +200,17 @@
 \begin{frame}
 \frametitle{How to pronounce \LaTeX\ ?}
 	
-	Another quote from the father of \LaTeX:
+	Another quote from the father of \LaTeX\footnote{This frame here uses the \textit{aquote} package}:
 	\begin{aquote}{Leslie Lamport}
 		One of the hardest things about LaTeX is deciding how to pronounce it.This is also one of the few things I'm not going to tell you about LaTeX, since pronunciation is best determined by usage, not fiat. TeX is usually pronounced teck, making lah-teck, and lay-teck the logical choices; but language is not always logical, so lay-tecks is also possible.
 	\end{aquote}
-
+	
 \end{frame}
 
 \begin{frame}
 	\frametitle{Installation}
 	
-	We would highly recommend the following \LaTeX \ distributions.
+	I would highly recommend the following \LaTeX \ distributions (or platforms).
 	
 	\begin{itemize}
 		\item For Windows users
@@ -222,9 +223,13 @@
 				\item TeX Live
 				\item MacTeX
 			\end{itemize}
+		\item For web-based users
+			\begin{itemize}
+				\item Overleaf
+			\end{itemize}
 	\end{itemize}
 
-	Note that the TeX Live distribution contains yearly updates, and the update installation must be done manually. TeX Live 2019 is scheduled to release by the end of this April.
+	Note that the TeX Live distribution contains yearly updates, and the update installation must be done manually.
 
 \end{frame}
 
@@ -234,7 +239,7 @@
 	There are in fact numerous ways for you to write up a \LaTeX \ document.
 
 	\begin{itemize}
-		\item TeXStudio (one that I use to build the beamer slides)
+		\item TeXStudio (one that I am using to build the beamer slides)
 		\item TeXShop
 		\item Notepad / Notepad++
 		\item Sublime
@@ -252,7 +257,7 @@
 \begin{frame}
 	\frametitle{How to use}
 	
-	We have to remind you that learning \LaTeX \ \emph{ (might be) very hard  \footnotemark}
+	We have to remind you that learning \LaTeX \ is \emph{(or might be) very hard  \footnotemark}
 	
 	\begin{figure}
 		\includegraphics[width=.7\linewidth]{Figures/Curve.png}
@@ -263,7 +268,7 @@
 \begin{frame}
 	\frametitle{How to use}
 	
-	We have to remind you that learning \LaTeX \ \emph{ (might be) very hard  \footnotemark}
+	We have to remind you that learning \LaTeX \ is \emph{(or might be) very hard  \footnotemark}
 	\begin{columns}
 		\tikzset{box/.style={inner xsep=0pt}}
 		
@@ -298,16 +303,18 @@
 		to [bend right,  "WANT THIS"]		($({pic cs:mark})+(6pt,-6pt)$);
 	\end{tikzpicture}
 	
-	\footnotetext{These arrows are plotted using a package called tikz}
-	
+	\footnotetext{These arrows are plotted using a package called \textit{tikz}}
+
 \end{frame}
+
 
 \begin{frame}
 	\frametitle{Some common knowledge}
 
 	\begin{itemize}
 		\item Since \LaTeX \ is a package implemented in the \TeX \ \textbf{typesetting language}, we should consider the \TeX \ input syntax when use it.
-		\item \TeX \ reads *.tex files and with lots of interesting background procedures, outputs *.pdf files. 
+		\item Being able to use style files and packages/environments properly is the key to success. Use Google when uncertain.
+		\item \TeX \ reads *.tex files, and with lots of interesting background procedures outputs *.pdf files. 
 	\end{itemize}
 	
 \end{frame}
@@ -317,9 +324,9 @@
 	
 	\begin{itemize}
 		\item The effect of typing multiple spaces is the same as one space.
-		\item The effect of typing multiple line feeds is the same as one line break.
-		\item If you don't know how and when to use $\backslash$ (backslash), \textbf{then you are doomed}.
-		\item Be aware of the use of \textbackslash xspace and whatever that follows the backslash after the \textasciitilde mark, e.g., \textasciitilde \textbackslash ref.
+		\item The effect of typing multiple line feeds is the same as a one-line break.
+		\item If you don't know how and when to use $\backslash$ (backslash), \textbf{then you need to know how and when to use it}.
+		\item Be aware of the use of \textbackslash xspace and whatever that follows the backslash after the \textasciitilde mark, e.g., \textasciitilde \textbackslash ref\footnote{I personally prefer to use \textasciitilde \textbackslash ref, \textasciitilde \textbackslash cite, etc., since doing so will force the symbols that follow not start a new line when required}.
 		\item \textbackslash(white space), this forces normal space, \textbackslash @, this indicates that the next punctuation ends the sentence. Try out the differences by yourselves.
 	\end{itemize}
 	
@@ -432,7 +439,7 @@ In terms of how to properly use them, try searching the internet for answers. \t
 \begin{frame}
 \frametitle{How to use quotation marks}
 
-One of the (out of many) mistakes that you will definitely make throughout your \LaTeX \ journey is the use of quotation marks.
+One of the (out of the many) mistakes that you will definitely make throughout your \LaTeX \ journey is the use of quotation marks.
 
 Unlike Word, \TeX \ uses single quotation mark (') and the grave accent (`) to encode the differences.
 
@@ -450,7 +457,28 @@ Unlike Word, \TeX \ uses single quotation mark (') and the grave accent (`) to e
 
 \end{frame}
 
+\begin{frame}
+	\frametitle{Surviving from using tables}
+	
+	Tables! Many have tried to survive, many then failed.
+	
+	\bigskip
+	
+	In general, there are: 
+	
+	\begin{itemize}
+	\item the normal table, \textbackslash table (then \textbackslash tabular), 
+	\item the table that can span over several pages, \textbackslash longtable
+	\item 
+	\end{itemize}
+\end{frame}
 
+\begin{frame}
+	\frametitle{A word of caution}
+		
+	\Huge{If you do not put theory into practice, you shall never be able to master \LaTeX.}\footnote{An infamous quote from Youchao Wang}
+		
+\end{frame}
 
 % \begin{frame}
 % 	\frametitle{Directory structure}
@@ -624,7 +652,7 @@ This is a sub sub section. Replace text here when you write your report.
 	\begin{enumerate}
 		% Numberd lists
 		\item \lipsum[1]
-		% Just try to make the PDF looks okay for this presentation
+		% Just trying to make the PDF look okay for this presentation
 		\item \lipsum[2]
 	\end{enumerate}
 \end{itemize}
@@ -668,7 +696,7 @@ This is a sub sub section. Replace text here when you write your report.
 		CSSA & Cambridge & Engineering \\
 	\end{tabular}
 \end{table}
-Figure \ref{fig}. Table \ref{tab}.
+Figure~\ref{fig}. Table~\ref{tab}.
 			\end{lstlisting}
 		\end{minipage}
 		\column{0.5\textwidth}
@@ -805,6 +833,16 @@ use google
 	\end{columns}
 \end{frame}
 
+\begin{frame}
+	\frametitle{References: a word of caution}
+
+	\begin{itemize}
+		\item I am personally an old user who prefers to use \textit{bibtex} instead of \textit{biblatex}, simply because: (a) most of my bibliography data-base in built upon \textit{bibtex}, (b) I am \textbf{too lazy} to switch.
+		\item However, if you have just began to use \LaTeX, do practice your use of \textit{biblatex} as it has a rather more modern implementation.
+		\item In fact, for \textit{bibtex} you would use \textit{BibTeX} as your bibliography tool. Unfortunately, this tool does not support \textit{biblatex}, as it uses \textit{Biber}.
+	\end{itemize}
+	
+\end{frame}
 
 \begin{frame}[containsverbatim]
 	\frametitle{Appendix}
@@ -888,7 +926,7 @@ This is the second appendix.
 \begin{frame}
 	\frametitle{Templates}
 	
-	I will demonstrate some useful \LaTeX\xspace templates. 
+	I will demonstrate some useful \LaTeX\xspace templates, in particular those in Overleaf, as it has became way too popular these days given most people are lazy and not bothered setting up their own development environments. 
 	
 	\bigskip
 	
@@ -899,7 +937,7 @@ This is the second appendix.
 \begin{frame}
 \frametitle{The last session: Q and A}
 
-Hopefully, hopefully and hopefully I will be able to answer your questions, because \LaTeX\xspace is HARD.
+Hopefully, hopefully and hopefully I will be able to answer your questions with my limited years of experience, because \LaTeX\xspace is HARD.
 
 \bigskip
 

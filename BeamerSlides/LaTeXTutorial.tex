@@ -73,6 +73,7 @@
 {\savebox\mybox{#1}\begin{quote}\openautoquote\hspace*{-.7ex}}
 	{\unskip\closeautoquote\vspace*{1mm}\signed{\usebox\mybox}\end{quote}}
 
+\usepackage{url}
 \usepackage[absolute,overlay]{textpos}
   \setlength{\TPHorizModule}{1mm}
   \setlength{\TPVertModule}{1mm}
@@ -101,7 +102,7 @@
 		\item Microsoft Office Word and PowerPoint are boring, because they literally are.
 		\item \LaTeX\ is elegant, charming, or whatever...
 		\item Excellent for mathematical typesetting (you can even use \LaTeX \ in Word!).
-		\item Powerful, lots and lots of funcationalities for you to discover and extend. Be it theses, papers, slides (using Beamer), spreadsheets... Your imagination is the only limitation (apart from time...).
+		\item Powerful, lots and lots of functionality for you to discover and extend. Be it theses, papers, slides (using Beamer), spreadsheets... Your imagination is the only limitation (apart from time...).
 		\item Free and portable, supported by most OS platforms.
 	\end{itemize}
 
@@ -118,7 +119,7 @@
 	\item Play around with mathematical formulae
 	\item Make presentation slides
 	\item Beautify your CV
-	\item and many more
+	\item and much more
 \end{itemize}
 
 \end{frame}
@@ -146,11 +147,11 @@
 \begin{frame}
 	\frametitle{Useful resources}
 
-	Learn \LaTeX \ in one video : https://www.youtube.com/watch?v=VhmkLrOjLsw
+	Learn \LaTeX \ in one video: \url{https://www.youtube.com/watch?v=VhmkLrOjLsw}
 	
 	\bigskip
 	
-	Overleaf: https://www.overleaf.com
+	Overleaf: \url{https://www.overleaf.com}
 	
 	The easy to use, online, collaborative editor. Templates and tutorials are available.
 
@@ -159,7 +160,7 @@
 \begin{frame}
 	\frametitle{A brief history}
 
-	In the mid 1970s, Donald Knuth, a Stanford CS geek and the academic world equivalent of Martin (the author of GOT), developed \TeX \ in SAIL to typeset his "The Art of Computer Programming" (TAOCP). First public release in 1978. He reimplemented it in Pascal in the mid 80s (WEB, literate programming).  Leslie Lamport, the genius, wrote \LaTeX \ in early 80s by porting the orginal \TeX. 
+	In the mid 1970s, Donald~Knuth, a Stanford CS geek and the academic world equivalent of Martin (the author of GOT), developed \TeX \ in SAIL to typeset his "The Art of Computer Programming" (TAOCP). First public release in 1978. He reimplemented it in Pascal in the mid 80s (WEB, literate programming).  Leslie~Lamport, the genius, wrote \LaTeX \ in early 80s by adding a set of macros to the orginal \TeX. 
 	
 	\bigskip
 	
@@ -180,12 +181,12 @@
 	
 	\bigskip
 	
-	\LaTeX, unlike Microsoft Office Word, is not \textbf{WYSIWYG} (what you see is what you get), and it allows the user to focus on the content and structure of the text. Lots of strange syntax and commands are present in the \LaTeX \ source file. 
+	\LaTeX, unlike Microsoft Word, does not use \textbf{direct manipulation}.  (It {\em is} \textbf{WYSIWYG}---what you see is what you get---but only if you create a preview in a PDF file or similar.  The text that you {\em edit} will {\em not} look like what you get, unless you have a clever editor like GNU~TeXmacs.)  \LaTeX{} allows the user to focus on the content and structure of the text. Some strange syntax and commands are present in the \LaTeX \ source file. 
 	
 \end{frame}
 
 \begin{frame}
-	\frametitle{How to pronounce \LaTeX\ ?}
+	\frametitle{How to pronounce \LaTeX{}}
 	
 	First and foremost, the pronunciation of \LaTeX. According to the father of \TeX\footnote{This frame here uses the \textit{aquote} package}:
 	
@@ -198,7 +199,7 @@
 \end{frame}
 
 \begin{frame}
-\frametitle{How to pronounce \LaTeX\ ?}
+\frametitle{How to pronounce \LaTeX{}}
 	
 	Another quote from the father of \LaTeX\footnote{This frame here uses the \textit{aquote} package}:
 	\begin{aquote}{Leslie Lamport}
@@ -250,6 +251,7 @@
 	\end{itemize}
 
 	In fact, any plain-text editor shall suffice.
+    There are also front ends like TeXmacs and LyX.
 
 \end{frame}
 
@@ -312,8 +314,8 @@
 	\frametitle{Some common knowledge}
 
 	\begin{itemize}
-		\item Since \LaTeX \ is a package implemented in the \TeX \ \textbf{typesetting language}, we should consider the \TeX \ input syntax when use it.
-		\item Being able to use style files and packages/environments properly is the key to success. Use Google when uncertain.
+		\item Since \LaTeX \ is implemented in the \TeX \ \textbf{typesetting language}, we should consider the \TeX \ input syntax when use it.
+		\item Being able to use style files and packages/environments properly is the key to success. Use Google when uncertain---but check it's a good source (highly-upvoted StackOverflow, etc).
 		\item \TeX \ reads *.tex files, and with lots of interesting background procedures outputs *.pdf files. 
 	\end{itemize}
 	
@@ -324,7 +326,7 @@
 	
 	\begin{itemize}
 		\item The effect of typing multiple spaces is the same as one space.
-		\item The effect of typing multiple line feeds is the same as a one-line break.
+		\item The effect of typing multiple line feeds is the same as a one-paragraph break.
 		\item If you don't know how and when to use $\backslash$ (backslash), \textbf{then you need to know how and when to use it}.
 		\item Be aware of the use of \textbackslash xspace and whatever that follows the backslash after the \textasciitilde mark, e.g., \textasciitilde \textbackslash ref\footnote{I personally prefer to use \textasciitilde \textbackslash ref, \textasciitilde \textbackslash cite, etc., since doing so will force the symbols that follow not start a new line when required}.
 		\item \textbackslash(white space), this forces normal space, \textbackslash @, this indicates that the next punctuation ends the sentence. Try out the differences by yourselves.
@@ -476,7 +478,7 @@ Unlike Word, \TeX \ uses single quotation mark (') and the grave accent (`) to e
 \begin{frame}
 	\frametitle{A word of caution}
 		
-	\Huge{If you do not put theory into practice, you shall never be able to master \LaTeX.}\footnote{An infamous quote from Youchao Wang}
+	\Huge{If you do not put theory into practice, you shall never be able to master \LaTeX.}\footnote{An infamous quote from Youchao~Wang}
 		
 \end{frame}
 
@@ -543,7 +545,7 @@ Unlike Word, \TeX \ uses single quotation mark (') and the grave accent (`) to e
 		[8cm]
 	\end{center}
 	\begin{flushright}
-		\textsc{\large CSSA. \\ A Latex User\\
+		\textsc{\large CSSA. \\ A \LaTeX{} User\\
 		20th Apr 2019}
 	\end{flushright}
 \end{titlepage}
@@ -639,8 +641,8 @@ This is a sub sub section. Replace text here when you write your report.
 			\begin{lstlisting}
 % Normal bullet point: itemized
 \begin{itemize}
-	\item This is our first line
-	\item This is our second line and I am making it longer so that you can see how text wraps around automatically in \LaTeX
+	\item This is our first item
+	\item This is our second item and I am making it longer so that you can see how text wraps around automatically in \LaTeX
 	\begin{itemize}
 		\item A bullet within a bullet!
 		\begin{itemize}
@@ -819,7 +821,7 @@ $$x^{2^3}$$
 
 		\begin{lstlisting}
 % .bibtex file
-use google
+use Google
 
 		\end{lstlisting}
 		\end{minipage}
@@ -837,7 +839,7 @@ use google
 	\frametitle{References: a word of caution}
 
 	\begin{itemize}
-		\item I am personally an old user who prefers to use \textit{bibtex} instead of \textit{biblatex}, simply because: (a) most of my bibliography data-base in built upon \textit{bibtex}, (b) I am \textbf{too lazy} to switch.
+		\item I am personally an old user who prefers to use \textit{bibtex} instead of \textit{biblatex}, simply because: (a) most of my bibliography database is built upon \textit{bibtex}, (b) I am \textbf{too lazy} to switch.
 		\item However, if you have just began to use \LaTeX, do practice your use of \textit{biblatex} as it has a rather more modern implementation.
 		\item In fact, for \textit{bibtex} you would use \textit{BibTeX} as your bibliography tool. Unfortunately, this tool does not support \textit{biblatex}, as it uses \textit{Biber}.
 	\end{itemize}
@@ -853,10 +855,10 @@ use google
 			\begin{lstlisting}
 \cleardoublepage
 \appendix
-\section{Appendix-1}
+\section{Some data}
 This is the first appendix.
 \lipsum[1]
-\section{Appendix-2}
+\section{Some more data}
 This is the second appendix.
 \begin{figure}[H]
 	\begin{subfigure}{0.5\linewidth}
@@ -935,9 +937,22 @@ This is the second appendix.
 \end{frame}
 
 \begin{frame}
+  \frametitle{Other packages}
+
+  We've mostly looked at \LaTeX{} commands useful
+  for {\bf engineers}.
+
+  \LaTeX{} also has packages for linguists,
+  musicians, chemists \& other disciplines.
+
+  It's worth checking what \LaTeX{} packages are
+  available for your subject!
+\end{frame}
+
+\begin{frame}
 \frametitle{The last session: Q and A}
 
-Hopefully, hopefully and hopefully I will be able to answer your questions with my limited years of experience, because \LaTeX\xspace is HARD.
+Hopefully, hopefully and hopefully I will be able to answer your questions with my limited years of experience, because \LaTeX\xspace is \textsc{hard}.
 
 \bigskip
 

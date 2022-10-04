@@ -50,3 +50,7 @@ Whenever you find yourself pulling an empty submodle folder, do not panic, all y
 ```
 git submodule update --init
 ```
+
+## Contributing
+
+Contributions are welcome. Simply create a PR should anything need to be updated or improved.

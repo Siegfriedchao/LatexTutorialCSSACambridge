@@ -22,17 +22,17 @@ pdflatex LaTeXTutorial.tex
 
 ## Useful references
 
-A University of Cambridge style beamer template can be found [here](https://github.com/rjw57/cambridge-beamer). The beamer presentation for this tutorial made use of this template.
+Here is a [University of Cambridge style beamer template](https://github.com/rjw57/cambridge-beamer). The beamer presentation for this tutorial made use of this template.
 
-A CUED (Engineering Department) PhD thesis template can be found [here](https://github.com/kks32/phd-thesis-template). A modified thesis template is available in the submodule.
+Here is a [CUED (Engineering Department) PhD thesis template](https://github.com/kks32/phd-thesis-template). A modified thesis template is available in the submodule.
 
-A good one-hour LaTeX youtube video can be found [here](https://www.youtube.com/watch?v=VhmkLrOjLsw).
+Here is a [one-hour LaTeX YouTube video](https://www.youtube.com/watch?v=VhmkLrOjLsw).
 
-The Cambridge Computer Lab LaTeX tutorial slides by Dr Markus Kuhn can be found [here](https://www.cl.cam.ac.uk/teaching/1617/TeX+MATLAB/latex-slides.pdf). Some of the contents in the presentation were referenced from this source.
+Here are the [Cambridge Computer Lab LaTeX tutorial slides by Dr Markus Kuhn](https://www.cl.cam.ac.uk/teaching/2122/TeX+MATLAB/latex-slides.pdf). Some of the contents in the presentation were referenced from this source.
 
 ## Cloning the repository
 
-Since this repo contains submodules, the ideal way of cloning this repository is:
+Since this repo contains `phd-thesis-template` as a submodule, the ideal way of cloning this repository is:
 
 ```
 git clone --recursive https://github.com/Siegfriedchao/LatexTutorialCSSACambridge.git

@@ -39,7 +39,7 @@
 		[8cm]
 	\end{center}
 	\begin{flushright}
-		\textsc{\large CSSA. \\ A Latex User\\
+		\textsc{\large CSSA. \\ A \LateX{} User\\
 		20th Apr 2019}
 	\end{flushright}
 \end{titlepage}
@@ -169,10 +169,18 @@ $$x^{2^3}$$
 
 \cleardoublepage
 \appendix
-\section{Appendix-1}
-This is the first appendix.
+\section{Some data}
+This is the first appendix.  But I did not call
+it Appendix~1, because I might want to add some
+other appendix before it later.  In general it is
+best to let \LaTeX{} do the numbering by itself,
+and use cross-references.  That way, you won't
+manually need to change any of your numbers if
+you insert an extra section in the middle, or
+delete one.
+
 \lipsum[1]
-\section{Appendix-2}
+\section{Some more data}
 This is the second appendix.
 \begin{figure}[H]
 	\begin{subfigure}{0.5\linewidth}

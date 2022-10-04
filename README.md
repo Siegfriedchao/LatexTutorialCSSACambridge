@@ -2,7 +2,7 @@
 
 ![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg)
 
-This repo hosts the project files for a Latex Workshop presented by Daoming Dong (dd511, Darwin College) and Youchao Wang (yw479, Clare Hall) for CSSA Cambridge, UK, April 20th, 2019.
+This repo hosts the project files for a Latex Workshop presented by Daoming Dong (dd511, Darwin College) and Youchao Wang (yw479, Clare Hall) for CSSA Cambridge, UK, April 20th, 2019. In 2022, hosted solely by Youchao Wang.
 
 ## A very important note
 
